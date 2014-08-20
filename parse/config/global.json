@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "WeatherPing": {
+            "applicationId": "Uf9cDf0SaNEnyM4IolJj3OOKnAgycEfqhcjcBiPJ", 
+            "masterKey": "ruzyaFzjZFhrCrP4Myxecvz6qnbJaLNwZrxmtA1m"
+        }, 
+        "_default": {
+            "link": "WeatherPing"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.19"
+    }
+}

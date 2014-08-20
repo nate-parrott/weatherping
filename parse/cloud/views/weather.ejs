@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta charset='utf-8'/>
+		<meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <title>Weather</title>
+		<script src='/skycons.js'></script>
+		<style>
+		body {
+			color: #343434;
+			font-family: "HelveticaNeue", sans-serif;
+		}
+		html, body, body > div {
+			margin: 0px;
+			height: 100%;
+			width: 100%;
+		}
+		body > div {
+			display: table;
+		}
+		body > div > div {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			padding: 20px;
+		}
+		h1 {
+			font-size: 1.5em;
+		}
+		#icon {
+			width: 128px;
+			height: 128px;
+		}
+		</style>
+  </head>
+  <body>
+		<div>
+			<div>
+				<h1><%= displayDate %></h1>
+				<canvas id="icon" width="256" height="256"></canvas>
+		    <p><%= text %></p>
+			</div>
+		</div>
+		<script>
+		var skycons = new Skycons({"color": "#343434"});
+		skycons.add("icon", Skycons.<%= skycon %>);
+		skycons.play();
+		</script>
+  </body>
+</html>

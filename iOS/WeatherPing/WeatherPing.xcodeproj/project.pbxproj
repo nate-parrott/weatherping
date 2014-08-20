@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07FFAD8FF033451E95F4857B /* libPods-WeatherPing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEDF32D777A4F4DAF878C7A /* libPods-WeatherPing.a */; };
+		5FC2175919A3E17000E02D95 /* NSString+URLEncoded.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC2175819A3E17000E02D95 /* NSString+URLEncoded.m */; };
+		5FC2175E19A435B200E02D95 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC2175D19A435B200E02D95 /* Crashlytics.framework */; };
+		5FDBD40319A3CBD400455DFE /* WPWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDBD40219A3CBD400455DFE /* WPWeatherView.m */; };
+		5FFBB36C19A2A609004D1C46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFBB36B19A2A609004D1C46 /* Foundation.framework */; };
+		5FFBB36E19A2A609004D1C46 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFBB36D19A2A609004D1C46 /* CoreGraphics.framework */; };
+		5FFBB37019A2A609004D1C46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFBB36F19A2A609004D1C46 /* UIKit.framework */; };
+		5FFBB37619A2A609004D1C46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5FFBB37419A2A609004D1C46 /* InfoPlist.strings */; };
+		5FFBB37819A2A609004D1C46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFBB37719A2A609004D1C46 /* main.m */; };
+		5FFBB37C19A2A609004D1C46 /* WPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFBB37B19A2A609004D1C46 /* WPAppDelegate.m */; };
+		5FFBB37E19A2A609004D1C46 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FFBB37D19A2A609004D1C46 /* Images.xcassets */; };
+		5FFBB38519A2A609004D1C46 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFBB38419A2A609004D1C46 /* XCTest.framework */; };
+		5FFBB38619A2A609004D1C46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFBB36B19A2A609004D1C46 /* Foundation.framework */; };
+		5FFBB38719A2A609004D1C46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFBB36F19A2A609004D1C46 /* UIKit.framework */; };
+		5FFBB38F19A2A609004D1C46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5FFBB38D19A2A609004D1C46 /* InfoPlist.strings */; };
+		5FFBB39119A2A609004D1C46 /* WeatherPingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFBB39019A2A609004D1C46 /* WeatherPingTests.m */; };
+		5FFBB39B19A2A7C6004D1C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FFBB39A19A2A7C6004D1C46 /* Main.storyboard */; };
+		5FFBB3A119A2A826004D1C46 /* WPWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFBB3A019A2A826004D1C46 /* WPWeatherViewController.m */; };
+		5FFBB3AA19A2AF49004D1C46 /* WPLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFBB3A919A2AF49004D1C46 /* WPLocationViewController.m */; };
+		5FFBB3AD19A2AF55004D1C46 /* WPTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFBB3AC19A2AF55004D1C46 /* WPTimeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FFBB38819A2A609004D1C46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FFBB36019A2A608004D1C46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FFBB36719A2A608004D1C46;
+			remoteInfo = WeatherPing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C129FCE95FF4DC9A5FC51E4 /* Pods-WeatherPing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherPing.xcconfig"; path = "Pods/Pods-WeatherPing.xcconfig"; sourceTree = "<group>"; };
+		5FC2175719A3E17000E02D95 /* NSString+URLEncoded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoded.h"; sourceTree = "<group>"; };
+		5FC2175819A3E17000E02D95 /* NSString+URLEncoded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoded.m"; sourceTree = "<group>"; };
+		5FC2175D19A435B200E02D95 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		5FDBD40119A3CBD300455DFE /* WPWeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPWeatherView.h; sourceTree = "<group>"; };
+		5FDBD40219A3CBD400455DFE /* WPWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPWeatherView.m; sourceTree = "<group>"; };
+		5FFBB36819A2A609004D1C46 /* WeatherPing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherPing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FFBB36B19A2A609004D1C46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5FFBB36D19A2A609004D1C46 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5FFBB36F19A2A609004D1C46 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5FFBB37319A2A609004D1C46 /* WeatherPing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeatherPing-Info.plist"; sourceTree = "<group>"; };
+		5FFBB37519A2A609004D1C46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5FFBB37719A2A609004D1C46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5FFBB37919A2A609004D1C46 /* WeatherPing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeatherPing-Prefix.pch"; sourceTree = "<group>"; };
+		5FFBB37A19A2A609004D1C46 /* WPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPAppDelegate.h; sourceTree = "<group>"; };
+		5FFBB37B19A2A609004D1C46 /* WPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPAppDelegate.m; sourceTree = "<group>"; };
+		5FFBB37D19A2A609004D1C46 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5FFBB38319A2A609004D1C46 /* WeatherPingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherPingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FFBB38419A2A609004D1C46 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5FFBB38C19A2A609004D1C46 /* WeatherPingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeatherPingTests-Info.plist"; sourceTree = "<group>"; };
+		5FFBB38E19A2A609004D1C46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5FFBB39019A2A609004D1C46 /* WeatherPingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherPingTests.m; sourceTree = "<group>"; };
+		5FFBB39A19A2A7C6004D1C46 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5FFBB39F19A2A826004D1C46 /* WPWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPWeatherViewController.h; sourceTree = "<group>"; };
+		5FFBB3A019A2A826004D1C46 /* WPWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPWeatherViewController.m; sourceTree = "<group>"; };
+		5FFBB3A819A2AF49004D1C46 /* WPLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPLocationViewController.h; sourceTree = "<group>"; };
+		5FFBB3A919A2AF49004D1C46 /* WPLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPLocationViewController.m; sourceTree = "<group>"; };
+		5FFBB3AB19A2AF55004D1C46 /* WPTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPTimeViewController.h; sourceTree = "<group>"; };
+		5FFBB3AC19A2AF55004D1C46 /* WPTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPTimeViewController.m; sourceTree = "<group>"; };
+		FEEDF32D777A4F4DAF878C7A /* libPods-WeatherPing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherPing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FFBB36519A2A608004D1C46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FFBB36E19A2A609004D1C46 /* CoreGraphics.framework in Frameworks */,
+				5FC2175E19A435B200E02D95 /* Crashlytics.framework in Frameworks */,
+				5FFBB37019A2A609004D1C46 /* UIKit.framework in Frameworks */,
+				5FFBB36C19A2A609004D1C46 /* Foundation.framework in Frameworks */,
+				07FFAD8FF033451E95F4857B /* libPods-WeatherPing.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FFBB38019A2A609004D1C46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FFBB38519A2A609004D1C46 /* XCTest.framework in Frameworks */,
+				5FFBB38719A2A609004D1C46 /* UIKit.framework in Frameworks */,
+				5FFBB38619A2A609004D1C46 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FFBB35F19A2A608004D1C46 = {
+			isa = PBXGroup;
+			children = (
+				5FFBB37119A2A609004D1C46 /* WeatherPing */,
+				5FFBB38A19A2A609004D1C46 /* WeatherPingTests */,
+				5FFBB36A19A2A609004D1C46 /* Frameworks */,
+				5FFBB36919A2A609004D1C46 /* Products */,
+				2C129FCE95FF4DC9A5FC51E4 /* Pods-WeatherPing.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		5FFBB36919A2A609004D1C46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FFBB36819A2A609004D1C46 /* WeatherPing.app */,
+				5FFBB38319A2A609004D1C46 /* WeatherPingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FFBB36A19A2A609004D1C46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FC2175D19A435B200E02D95 /* Crashlytics.framework */,
+				5FFBB36B19A2A609004D1C46 /* Foundation.framework */,
+				5FFBB36D19A2A609004D1C46 /* CoreGraphics.framework */,
+				5FFBB36F19A2A609004D1C46 /* UIKit.framework */,
+				5FFBB38419A2A609004D1C46 /* XCTest.framework */,
+				FEEDF32D777A4F4DAF878C7A /* libPods-WeatherPing.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FFBB37119A2A609004D1C46 /* WeatherPing */ = {
+			isa = PBXGroup;
+			children = (
+				5FFBB37A19A2A609004D1C46 /* WPAppDelegate.h */,
+				5FFBB37B19A2A609004D1C46 /* WPAppDelegate.m */,
+				5FFBB39F19A2A826004D1C46 /* WPWeatherViewController.h */,
+				5FFBB3A019A2A826004D1C46 /* WPWeatherViewController.m */,
+				5FDBD40119A3CBD300455DFE /* WPWeatherView.h */,
+				5FDBD40219A3CBD400455DFE /* WPWeatherView.m */,
+				5FFBB3A819A2AF49004D1C46 /* WPLocationViewController.h */,
+				5FFBB3A919A2AF49004D1C46 /* WPLocationViewController.m */,
+				5FFBB3AB19A2AF55004D1C46 /* WPTimeViewController.h */,
+				5FFBB3AC19A2AF55004D1C46 /* WPTimeViewController.m */,
+				5FC2175719A3E17000E02D95 /* NSString+URLEncoded.h */,
+				5FC2175819A3E17000E02D95 /* NSString+URLEncoded.m */,
+				5FFBB39A19A2A7C6004D1C46 /* Main.storyboard */,
+				5FFBB37D19A2A609004D1C46 /* Images.xcassets */,
+				5FFBB37219A2A609004D1C46 /* Supporting Files */,
+			);
+			path = WeatherPing;
+			sourceTree = "<group>";
+		};
+		5FFBB37219A2A609004D1C46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FFBB37319A2A609004D1C46 /* WeatherPing-Info.plist */,
+				5FFBB37419A2A609004D1C46 /* InfoPlist.strings */,
+				5FFBB37719A2A609004D1C46 /* main.m */,
+				5FFBB37919A2A609004D1C46 /* WeatherPing-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5FFBB38A19A2A609004D1C46 /* WeatherPingTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FFBB39019A2A609004D1C46 /* WeatherPingTests.m */,
+				5FFBB38B19A2A609004D1C46 /* Supporting Files */,
+			);
+			path = WeatherPingTests;
+			sourceTree = "<group>";
+		};
+		5FFBB38B19A2A609004D1C46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FFBB38C19A2A609004D1C46 /* WeatherPingTests-Info.plist */,
+				5FFBB38D19A2A609004D1C46 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FFBB36719A2A608004D1C46 /* WeatherPing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FFBB39419A2A609004D1C46 /* Build configuration list for PBXNativeTarget "WeatherPing" */;
+			buildPhases = (
+				E16B492E42164F96AC0D5176 /* Check Pods Manifest.lock */,
+				5FFBB36419A2A608004D1C46 /* Sources */,
+				5FFBB36519A2A608004D1C46 /* Frameworks */,
+				5FFBB36619A2A608004D1C46 /* Resources */,
+				A6EAF79219A946DCA23C4735 /* Copy Pods Resources */,
+				5FC2175C19A4359000E02D95 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeatherPing;
+			productName = WeatherPing;
+			productReference = 5FFBB36819A2A609004D1C46 /* WeatherPing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5FFBB38219A2A609004D1C46 /* WeatherPingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FFBB39719A2A609004D1C46 /* Build configuration list for PBXNativeTarget "WeatherPingTests" */;
+			buildPhases = (
+				5FFBB37F19A2A609004D1C46 /* Sources */,
+				5FFBB38019A2A609004D1C46 /* Frameworks */,
+				5FFBB38119A2A609004D1C46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FFBB38919A2A609004D1C46 /* PBXTargetDependency */,
+			);
+			name = WeatherPingTests;
+			productName = WeatherPingTests;
+			productReference = 5FFBB38319A2A609004D1C46 /* WeatherPingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FFBB36019A2A608004D1C46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Nate Parrott";
+				TargetAttributes = {
+					5FFBB36719A2A608004D1C46 = {
+						DevelopmentTeam = VPN8ZW6EAC;
+					};
+					5FFBB38219A2A609004D1C46 = {
+						TestTargetID = 5FFBB36719A2A608004D1C46;
+					};
+				};
+			};
+			buildConfigurationList = 5FFBB36319A2A608004D1C46 /* Build configuration list for PBXProject "WeatherPing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5FFBB35F19A2A608004D1C46;
+			productRefGroup = 5FFBB36919A2A609004D1C46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FFBB36719A2A608004D1C46 /* WeatherPing */,
+				5FFBB38219A2A609004D1C46 /* WeatherPingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FFBB36619A2A608004D1C46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FFBB39B19A2A7C6004D1C46 /* Main.storyboard in Resources */,
+				5FFBB37619A2A609004D1C46 /* InfoPlist.strings in Resources */,
+				5FFBB37E19A2A609004D1C46 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FFBB38119A2A609004D1C46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FFBB38F19A2A609004D1C46 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FC2175C19A4359000E02D95 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run c00a274f2c47ad5ee89b17ccb2fdb86e8d1fece8 cf3ca8aefff328c68d183c05c288062a57dcbbf7f5bbd8f43418c90e18fca3bf";
+		};
+		A6EAF79219A946DCA23C4735 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-WeatherPing-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E16B492E42164F96AC0D5176 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FFBB36419A2A608004D1C46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FDBD40319A3CBD400455DFE /* WPWeatherView.m in Sources */,
+				5FFBB37819A2A609004D1C46 /* main.m in Sources */,
+				5FFBB3A119A2A826004D1C46 /* WPWeatherViewController.m in Sources */,
+				5FC2175919A3E17000E02D95 /* NSString+URLEncoded.m in Sources */,
+				5FFBB37C19A2A609004D1C46 /* WPAppDelegate.m in Sources */,
+				5FFBB3AD19A2AF55004D1C46 /* WPTimeViewController.m in Sources */,
+				5FFBB3AA19A2AF49004D1C46 /* WPLocationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FFBB37F19A2A609004D1C46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FFBB39119A2A609004D1C46 /* WeatherPingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FFBB38919A2A609004D1C46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FFBB36719A2A608004D1C46 /* WeatherPing */;
+			targetProxy = 5FFBB38819A2A609004D1C46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5FFBB37419A2A609004D1C46 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FFBB37519A2A609004D1C46 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5FFBB38D19A2A609004D1C46 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FFBB38E19A2A609004D1C46 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FFBB39219A2A609004D1C46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5FFBB39319A2A609004D1C46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FFBB39519A2A609004D1C46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C129FCE95FF4DC9A5FC51E4 /* Pods-WeatherPing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeatherPing/WeatherPing-Prefix.pch";
+				INFOPLIST_FILE = "WeatherPing/WeatherPing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5FFBB39619A2A609004D1C46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C129FCE95FF4DC9A5FC51E4 /* Pods-WeatherPing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeatherPing/WeatherPing-Prefix.pch";
+				INFOPLIST_FILE = "WeatherPing/WeatherPing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5FFBB39819A2A609004D1C46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WeatherPing.app/WeatherPing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeatherPing/WeatherPing-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WeatherPingTests/WeatherPingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5FFBB39919A2A609004D1C46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WeatherPing.app/WeatherPing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeatherPing/WeatherPing-Prefix.pch";
+				INFOPLIST_FILE = "WeatherPingTests/WeatherPingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FFBB36319A2A608004D1C46 /* Build configuration list for PBXProject "WeatherPing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FFBB39219A2A609004D1C46 /* Debug */,
+				5FFBB39319A2A609004D1C46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FFBB39419A2A609004D1C46 /* Build configuration list for PBXNativeTarget "WeatherPing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FFBB39519A2A609004D1C46 /* Debug */,
+				5FFBB39619A2A609004D1C46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FFBB39719A2A609004D1C46 /* Build configuration list for PBXNativeTarget "WeatherPingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FFBB39819A2A609004D1C46 /* Debug */,
+				5FFBB39919A2A609004D1C46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FFBB36019A2A608004D1C46 /* Project object */;
+}
