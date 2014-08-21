@@ -20,8 +20,8 @@
     NSCalendar *cal = [NSCalendar currentCalendar];
     NSDateComponents *comps = [cal components:NSHourCalendarUnit | NSMinuteCalendarUnit fromDate:self.datePicker.date];
     double seconds = (comps.hour * 60 + comps.minute) * 60;
-    [PFInstallation currentInstallation][@"deliveryTime"] = @(seconds);
-    [[PFInstallation currentInstallation] saveEventually];
+    [APP_DELEGATE installation][@"deliveryTime"] = @(seconds);
+    [APP_DELEGATE saveInstallation];
 }
 
 - (IBAction)done:(id)sender {

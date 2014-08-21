@@ -11,5 +11,6 @@
 @interface WPWeatherView : UIView
 
 - (IBAction)refresh:(id)sender;
+@property (nonatomic) BOOL loading;
 
 @end

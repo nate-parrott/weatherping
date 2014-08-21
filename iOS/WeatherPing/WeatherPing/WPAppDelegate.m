@@ -9,19 +9,30 @@
 #import "WPAppDelegate.h"
 #import <Crashlytics/Crashlytics.h>
 
+@interface WPAppDelegate ()
+
+@property (nonatomic) NSInteger activityIndicatorCount;
+
+@end
+
 @implementation WPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [Crashlytics startWithAPIKey:@"c00a274f2c47ad5ee89b17ccb2fdb86e8d1fece8"];
-    [self.window setTintColor:[UIColor colorWithRed:0.271 green:0.647 blue:0.584 alpha:1.000]];
+    [self applyTheming];
     [Parse setApplicationId:@"Uf9cDf0SaNEnyM4IolJj3OOKnAgycEfqhcjcBiPJ"
                   clientKey:@"X9vWnuPZu9MAloBiZyaTqJnvcHf5ACEm6Xln1RLh"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    self.installation = [PFInstallation currentInstallation];
     [self updatePushStatus];
     [self.window makeKeyAndVisible];
     
     return YES;
+}
+
+- (void)applyTheming {
+    [self.window setTintColor:[UIColor colorWithRed:0.271 green:0.647 blue:0.584 alpha:1.000]];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -62,10 +73,9 @@
 - (void)application:(UIApplication *)application
 didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)newDeviceToken {
     // Store the deviceToken in the current installation and save it to Parse.
-    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-    [currentInstallation setDeviceTokenFromData:newDeviceToken];
-    currentInstallation.channels = @[@"global"];
-    [currentInstallation saveInBackground];
+    [self.installation setDeviceTokenFromData:newDeviceToken];
+    self.installation.channels = @[@"global"];
+    [self saveInstallation];
     [self updatePushStatus];
 }
 
@@ -80,6 +90,25 @@ didReceiveRemoteNotification:(NSDictionary *)userInfo {
 
 - (void)updatePushStatus {
     self.pushNotificationsEnabled = [[UIApplication sharedApplication] enabledRemoteNotificationTypes] != UIRemoteNotificationTypeNone;
+}
+
+#pragma mark Activity indicator
+
+- (void)incrementNetworkActivityIndicatorCount {
+    self.activityIndicatorCount++;
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+}
+- (void)decrementNetworkActivityIndicatorCount {
+    self.activityIndicatorCount--;
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:self.activityIndicatorCount > 0];
+}
+
+- (void)saveInstallation {
+    [self.installation saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (!succeeded) {
+            [self.installation saveEventually];
+        }
+    }];
 }
 
 @end

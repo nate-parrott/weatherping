@@ -39,6 +39,7 @@
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView {
+    self.loading = YES;
     self.placeholder.image = [UIImage imageWithContentsOfFile:[self snapshotPath]];
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
         self.placeholder.alpha = 1;
@@ -48,6 +49,7 @@
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
+    self.loading = NO;
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
         self.placeholder.alpha = 0;
     } completion:^(BOOL finished) {
@@ -62,6 +64,14 @@
         UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         [UIImagePNGRepresentation([image applyBlurWithRadius:19 tintColor:nil saturationDeltaFactor:1 maskImage:nil]) writeToFile:[self snapshotPath] atomically:YES];
+    }
+}
+
+- (void)setLoading:(BOOL)loading {
+    if (loading != _loading) {
+        _loading = loading;
+        if (loading) [APP_DELEGATE incrementNetworkActivityIndicatorCount];
+        else [APP_DELEGATE decrementNetworkActivityIndicatorCount];
     }
 }
 

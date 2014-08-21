@@ -132,7 +132,7 @@ typedef enum {
     self.state = WPLocationViewControllerStateGettingGeocoding;
     [[[NSURLSession sharedSession] dataTaskWithRequest:[NSURLRequest requestWithURL:url] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            PFInstallation *inst = [PFInstallation currentInstallation];
+            PFInstallation *inst = [APP_DELEGATE installation];
             NSDictionary *location = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil][@"location"];
             NSString *weatherURL = location[@"requesturl"];
             NSString *locationName = location[@"city"];

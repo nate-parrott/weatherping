@@ -22,7 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:UIApplicationDidBecomeActiveNotification object:nil];
     self.timeLabel.titleLabel.numberOfLines = 0;
     self.timeLabel.titleLabel.textAlignment = NSTextAlignmentCenter;
     
@@ -33,6 +32,12 @@
     
     self.timeLabel.alpha = 0;
     self.weather.alpha = 0;
+    
+    RACSignal *installationUpdated = [RACObserve(APP_DELEGATE.installation, updatedAt) startWith:nil];
+    [[installationUpdated deliverOn:[RACScheduler mainThreadScheduler]] subscribeNext:^(id x) {
+        [self refresh];
+    }];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:UIApplicationWillEnterForegroundNotification object:nil];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
@@ -46,7 +51,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    if ([[PFInstallation currentInstallation] valueForKey:@"weatherURL"] == nil) {
+    if ([[APP_DELEGATE installation] valueForKey:@"weatherURL"] == nil) {
         [self performSegueWithIdentifier:@"Setup" sender:nil];
     }
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionAllowUserInteraction animations:^{

@@ -18,4 +18,10 @@
 
 @property (nonatomic) BOOL pushNotificationsEnabled;
 
+- (void)incrementNetworkActivityIndicatorCount;
+- (void)decrementNetworkActivityIndicatorCount;
+
+@property (nonatomic) PFInstallation *installation;
+- (void)saveInstallation;
+
 @end
