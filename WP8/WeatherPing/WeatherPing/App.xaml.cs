@@ -30,6 +30,16 @@ namespace WeatherPing
             UnhandledException += Application_UnhandledException;
 
             ParseClient.Initialize("Uf9cDf0SaNEnyM4IolJj3OOKnAgycEfqhcjcBiPJ", "t9HdXpy5hkuit3tY3ov5xTlHmsdMbF9UHNvNXcML");
+            this.Startup += async (sender, args) =>
+            {
+                // This optional line tracks statistics around app opens, including push effectiveness:
+                ParseAnalytics.TrackAppOpens(RootFrame);
+
+                // By convention, the empty string is considered a "Broadcast" channel
+                // Note that we had to add "async" to the definition to use the await keyword
+                await ParsePush.SubscribeAsync("");
+            };
+
             App.installation = Parse.ParseInstallation.CurrentInstallation;
 
             // Standard XAML initialization

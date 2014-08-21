@@ -32,7 +32,7 @@
             </StackPanel>
             <Button Click="Done_Click" Name="Done" Grid.Row="4">Done</Button>
         </Grid>
-        <ProgressBar Name="Loader" Height="10" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" IsIndeterminate="True"/>
+        <ProgressBar Name="Loader" Height="10" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" IsIndeterminate="True"/>
     </Grid>
 
 </phone:PhoneApplicationPage>

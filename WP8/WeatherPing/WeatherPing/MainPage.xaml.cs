@@ -42,11 +42,47 @@ namespace WeatherPing
                 if (PM) hours -= 12;
                 if (hours == 0) hours = 12;
                 AlertTimeLabel.Text = String.Format("{0}:{1} {2}", hours, minutes.ToString("D2"), PM ? "PM" : "AM");
-                AlertLocationLabel.Text = locationName;
-                Browser.Source = new Uri("http://weatherping.parseapp.com/weather?url=" + Uri.EscapeUriString(weatherURL));
+                AlertLocationLabel.Text = locationName.ToLower();
+                var urlString = String.Format("http://weatherping.parseapp.com/weather?url={0}&style=windows", Uri.EscapeDataString(weatherURL));
+                loading = true;
+                Browser.Source = new Uri(urlString);
             } else {
                 NavigationService.Navigate(new Uri("/Hello.xaml", UriKind.Relative));
             }
+        }
+
+        private void WeatherLoaded(object sender, NavigationEventArgs e)
+        {
+            loading = false;
+        }
+
+        private bool m_loading = false;
+        private bool loading
+        {
+            get
+            {
+                return m_loading;
+            }
+            set
+            {
+                if (m_loading != value)
+                {
+                    m_loading = value;
+                    if (m_loading)
+                    {
+                        LoadingStart.Begin();
+                    }
+                    else
+                    {
+                        LoadingEnd.Begin();
+                    }
+                }
+            }
+        }
+
+        private void Launch_Setup(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Location.xaml", UriKind.Relative));
         }
     }
 }

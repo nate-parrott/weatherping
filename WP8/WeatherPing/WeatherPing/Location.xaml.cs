@@ -108,7 +108,6 @@ namespace WeatherPing
                     LocationLabel.Text = info.locationName;
                     App.installation["locationName"] = info.locationName;
                     App.installation["weatherURL"] = info.weatherUrl;
-                    App.installation.SaveAsync();
                     setState(WorkState.Done);
                 }
                 else

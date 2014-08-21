@@ -19,7 +19,9 @@ namespace WeatherPing
 
         private void Done_Click(object sender, RoutedEventArgs e)
         {
-
+            App.installation["deliveryTime"] = getSecondsFromStartOfDay(TimePicker.Value.Value);
+            App.installation.SaveAsync();
+            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
         }
 
         private void Time_Changed(object sender, DateTimeValueChangedEventArgs e)
